@@ -33,24 +33,12 @@ const Users = db.define('users' ,{
         type: DataTypes.STRING,
         allowNull: false,
     },
-    gender: {
-        type: DataTypes.STRING,
+    profile_image: {
+        type: DataTypes.STRING
     },
-    birthday: {
-        type: DataTypes.DATEONLY,
+    phone: {
+        type: DataTypes.STRING(16),
         allowNull: false
-    },
-    role: {
-        type: DataTypes.STRING,
-        defaultValue: 'normal'
-    },
-    status: {
-        type: DataTypes.STRING,
-        defaultValue: 'active'
-    },
-    isVerified: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false
     }
 })
 

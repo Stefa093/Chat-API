@@ -15,7 +15,7 @@ const initModels = () => {
     Users.hasMany(Conversations)
     Conversations.belongsTo(Users)
 
-    Users.hasTo(Participants)
+    Users.hasMany(Participants)
     Participants.belongsTo(Users)
 
     Conversations.hasMany(Participants)

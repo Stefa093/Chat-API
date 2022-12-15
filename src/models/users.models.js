@@ -37,7 +37,7 @@ const Users = db.define('users' ,{
         type: DataTypes.STRING
     },
     birthday: {
-        type: DataTypes.STRING(16),
+        type: DataTypes.DATEONLY,
         allowNull: false
     },
     role: {
